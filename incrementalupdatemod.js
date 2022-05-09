@@ -10,13 +10,7 @@ class IncrementalUpdate {
         xhr.timeout = 2000;
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.send(
-            JSON.stringify(
-            {
-                    "type": "incr_update",
-                    "data": data,
-                    "instance": window.gamestate.game.auth.instance
-                }
-            )
+            JSON.stringify({"type": "incr_update","data": data,"instance": window.gamestate.game.auth.instance})
         );
     }
 }
